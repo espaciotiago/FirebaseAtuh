@@ -49,7 +49,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4jc-mg-u0G">
-                                <rect key="frame" x="32" y="395" width="350" height="30"/>
+                                <rect key="frame" x="32" y="425.5" width="350" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-Ov-M81">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="30"/>
@@ -73,36 +73,77 @@
                                     <constraint firstAttribute="height" constant="30" id="uhU-Pj-0Ol"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario creado correctamente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8q-Dv-7IO">
+                                <rect key="frame" x="32" y="379" width="350" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.2334012996771101" green="1" blue="0.17961489885442627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4jc-mg-u0G" firstAttribute="leading" secondItem="k6d-eU-cUL" secondAttribute="leading" id="7Eg-TB-kyZ"/>
                             <constraint firstItem="vYZ-wC-1tW" firstAttribute="leading" secondItem="plm-PX-6Ze" secondAttribute="leading" id="7N6-ZO-WKl"/>
                             <constraint firstItem="k6d-eU-cUL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAF-zw-1TL"/>
-                            <constraint firstItem="4jc-mg-u0G" firstAttribute="top" secondItem="k6d-eU-cUL" secondAttribute="bottom" constant="32" id="HQF-Hl-Xfd"/>
+                            <constraint firstItem="B8q-Dv-7IO" firstAttribute="leading" secondItem="k6d-eU-cUL" secondAttribute="leading" id="Hkb-oY-aPv"/>
+                            <constraint firstItem="B8q-Dv-7IO" firstAttribute="trailing" secondItem="k6d-eU-cUL" secondAttribute="trailing" id="Iy6-fo-DA7"/>
                             <constraint firstItem="vYZ-wC-1tW" firstAttribute="top" secondItem="4CC-SJ-9sK" secondAttribute="bottom" constant="8" id="MiH-Ae-cjH"/>
                             <constraint firstItem="4jc-mg-u0G" firstAttribute="trailing" secondItem="k6d-eU-cUL" secondAttribute="trailing" id="OJu-qh-N0R"/>
                             <constraint firstItem="plm-PX-6Ze" firstAttribute="top" secondItem="vYZ-wC-1tW" secondAttribute="bottom" constant="8" id="RzW-c5-jPm"/>
                             <constraint firstItem="4CC-SJ-9sK" firstAttribute="trailing" secondItem="vYZ-wC-1tW" secondAttribute="trailing" id="SXD-aw-DMc"/>
                             <constraint firstItem="k6d-eU-cUL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="T20-sO-s4b"/>
                             <constraint firstItem="plm-PX-6Ze" firstAttribute="leading" secondItem="k6d-eU-cUL" secondAttribute="leading" id="T5M-p0-rpP"/>
+                            <constraint firstItem="4jc-mg-u0G" firstAttribute="top" secondItem="B8q-Dv-7IO" secondAttribute="bottom" constant="32" id="aNq-WJ-cWO"/>
                             <constraint firstItem="k6d-eU-cUL" firstAttribute="top" secondItem="plm-PX-6Ze" secondAttribute="bottom" constant="8" id="ab3-69-T7d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k6d-eU-cUL" secondAttribute="trailing" constant="32" id="iks-wM-72e"/>
                             <constraint firstItem="4CC-SJ-9sK" firstAttribute="leading" secondItem="vYZ-wC-1tW" secondAttribute="leading" id="lKh-lv-fNh"/>
                             <constraint firstItem="k6d-eU-cUL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="lmd-V4-8r9"/>
                             <constraint firstItem="vYZ-wC-1tW" firstAttribute="trailing" secondItem="plm-PX-6Ze" secondAttribute="trailing" id="lz0-El-Hlq"/>
                             <constraint firstItem="plm-PX-6Ze" firstAttribute="trailing" secondItem="k6d-eU-cUL" secondAttribute="trailing" id="nFh-md-d4k"/>
+                            <constraint firstItem="B8q-Dv-7IO" firstAttribute="top" secondItem="k6d-eU-cUL" secondAttribute="bottom" constant="16" id="rY7-3k-l7a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lblFeedBack" destination="B8q-Dv-7IO" id="26H-zj-2Wf"/>
                         <outlet property="txtMail" destination="vYZ-wC-1tW" id="qBu-vb-2po"/>
                         <outlet property="txtPassword" destination="k6d-eU-cUL" id="7lC-yy-jR6"/>
+                        <segue destination="krD-IP-T42" kind="show" identifier="gotoWellcome" id="KIp-rU-ynJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="29" y="5"/>
+        </scene>
+        <!--Wellcome View Controller-->
+        <scene sceneID="fUd-ov-RtG">
+            <objects>
+                <viewController storyboardIdentifier="WellcomeViewController" id="krD-IP-T42" customClass="WellcomeViewController" customModule="FirebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49B-WG-GAj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTB-jX-o2o">
+                                <rect key="frame" x="169" y="437.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lTB-jX-o2o" firstAttribute="centerX" secondItem="49B-WG-GAj" secondAttribute="centerX" id="3d7-Q5-TQc"/>
+                            <constraint firstItem="lTB-jX-o2o" firstAttribute="centerY" secondItem="49B-WG-GAj" secondAttribute="centerY" id="if0-9T-Ouu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ihF-QC-uUR"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblWellcome" destination="lTB-jX-o2o" id="sDU-hO-qFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGG-Mq-cpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="5"/>
         </scene>
     </scenes>
 </document>

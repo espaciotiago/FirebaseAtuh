@@ -18,6 +18,7 @@
 		46C4F34622CE5C9B001F16AC /* FirebaseLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4F34522CE5C9B001F16AC /* FirebaseLoginUITests.swift */; };
 		46C4F35722CE5E11001F16AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46C4F35622CE5E10001F16AC /* GoogleService-Info.plist */; };
 		6D2ACEC3AFDC30AECD7E0AAB /* Pods_FirebaseLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A44980B67D89C9A496D6F /* Pods_FirebaseLoginTests.framework */; };
+		9928714622CFAA1F00C1C39D /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928714522CFAA1F00C1C39D /* WellcomeViewController.swift */; };
 		E85F0D03E435D3672B25E242 /* Pods_FirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72E5A1627A5A28BB650DE49 /* Pods_FirebaseLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		46C4F34522CE5C9B001F16AC /* FirebaseLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginUITests.swift; sourceTree = "<group>"; };
 		46C4F34722CE5C9B001F16AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C4F35622CE5E10001F16AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9928714522CFAA1F00C1C39D /* WellcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
 		A8366D70FC24CC8E78F1C84D /* Pods-FirebaseLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLoginTests/Pods-FirebaseLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B75F805038FA499F44CE3FCB /* Pods-FirebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLogin.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLogin/Pods-FirebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CAAE3874571C30BF550C8656 /* Pods-FirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLogin.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLogin/Pods-FirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				46C4F32722CE5C75001F16AC /* ViewController.swift */,
+				9928714522CFAA1F00C1C39D /* WellcomeViewController.swift */,
 			);
 			name = Controllers;
 			path = "New Group";
@@ -193,7 +196,6 @@
 				4408471331CB8FCD03654A34 /* Pods-FirebaseLoginUITests.debug.xcconfig */,
 				32F7C5E7F6A4798D627660B9 /* Pods-FirebaseLoginUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -430,6 +432,7 @@
 			files = (
 				462F831222CE9080004D6334 /* FirebaseManager.swift in Sources */,
 				46C4F32822CE5C75001F16AC /* ViewController.swift in Sources */,
+				9928714622CFAA1F00C1C39D /* WellcomeViewController.swift in Sources */,
 				46C4F32622CE5C75001F16AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
