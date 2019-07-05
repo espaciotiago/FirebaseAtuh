@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1088498018682-e2q9h9jrikvpli1hhn6qvo1iualk0nss.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1088498018682-e2q9h9jrikvpli1hhn6qvo1iualk0nss</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCy_yjjQSWX_yGyP79JgK7M94Hi5jM534w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1088498018682</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.ufo.mobile.FirebaseLogin</string>
+	<key>PROJECT_ID</key>
+	<string>logintest-11a53</string>
+	<key>STORAGE_BUCKET</key>
+	<string>logintest-11a53.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1088498018682:ios:7ff53515ccbd8026</string>
+	<key>DATABASE_URL</key>
+	<string>https://logintest-11a53.firebaseio.com</string>
+</dict>
+</plist>
